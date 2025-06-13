@@ -5,32 +5,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>YYC Wash - Pressure Washing Services in Calgary</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
       background-color: #f4f4f4;
       color: #333;
     }
 
     header {
-      background-color: #007acc;
-      color: white;
+      background-color: #065B8B;
+      color: #FFFFFF;
       padding: 2rem 1rem;
       text-align: center;
     }
 
+    header img {
+      max-height: 180px;
+      margin-bottom: 1rem;
+      height: 10rem;
+    }
+
     nav {
-      background-color: #005fa3;
+      background-color: #2E8A47;
       display: flex;
       justify-content: center;
       padding: 0.5rem;
     }
 
     nav a {
-      color: white;
+      color: #FFFFFF;
       margin: 0 1rem;
       text-decoration: none;
+      font-weight: bold;
     }
 
     nav a:hover {
@@ -41,7 +49,7 @@
       max-width: 1000px;
       margin: 2rem auto;
       padding: 1rem;
-      background: white;
+      background: #FFFFFF;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
@@ -57,11 +65,43 @@
       background-color: #e6f4ff;
       padding: 1rem;
       border-radius: 8px;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .service img {
+      width: 50%;
+      border-radius: 4px;
+    }
+
+    .service-text {
+      flex: 1;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .gallery img {
+      width: calc(33% - 1rem);
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+      margin-top: 2rem;
     }
 
     footer {
-      background-color: #007acc;
-      color: white;
+      background-color: #065B8B;
+      color: #FFFFFF;
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
@@ -71,14 +111,15 @@
 
 <body>
   <header>
-    <h1>YYC Wash</h1>
-    <p>Professional Pressure Washing Services in Calgary</p>
+    <img src="images\yycwashlogo.png" alt="YYC Wash Logo">
+    <p>Residential Pressure Washing Services in Calgary</p>
   </header>
 
   <nav>
     <a href="#services">Services</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
+    <a href="#quote">Get a Quote</a>
   </nav>
 
   <div class="container">
@@ -86,20 +127,32 @@
       <h2>Our Services</h2>
       <div class="services">
         <div class="service">
-          <h3>Driveway & Sidewalk Cleaning</h3>
-          <p>Remove stains, dirt, and grime to restore the look of your driveway and walkways.</p>
+          <img src="images\driveway.jpg" alt="Driveway Cleaning">
+          <div class="service-text">
+            <h3>Driveway & Sidewalk Cleaning</h3>
+            <p>Remove stains, dirt, and grime to restore the look of your driveway and walkways.</p>
+          </div>
         </div>
         <div class="service">
-          <h3>Siding & Exterior House Washing</h3>
-          <p>We gently but effectively clean home exteriors to boost curb appeal.</p>
+          <img src="images\siding.jpg" alt="Siding Washing">
+          <div class="service-text">
+            <h3>Siding & Exterior House Washing</h3>
+            <p>We gently but effectively clean home exteriors to boost curb appeal.</p>
+          </div>
         </div>
         <div class="service">
-          <h3>Deck & Patio Cleaning</h3>
-          <p>Revive your outdoor spaces by removing built-up grime, algae, and mildew.</p>
+          <img src="images\deck.jpg" alt="Deck and Patio Cleaning">
+          <div class="service-text">
+            <h3>Deck & Patio Cleaning</h3>
+            <p>Revive your outdoor spaces by removing built-up grime, algae, and mildew.</p>
+          </div>
         </div>
         <div class="service">
-          <h3>Fence Washing</h3>
-          <p>Refresh your wooden or vinyl fences with a safe, deep cleaning.</p>
+          <img src="images\fence.jpg" alt="Fence Washing">
+          <div class="service-text">
+            <h3>Fence Washing</h3>
+            <p>Refresh your wooden or vinyl fences with a safe, deep cleaning.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -107,6 +160,12 @@
     <section id="about">
       <h2>About YYC Wash</h2>
       <p>YYC Wash is a locally owned and operated pressure washing business serving Calgary and surrounding areas. We pride ourselves on top-notch service, eco-friendly practices, and affordable rates. Whether it's your home, business, or industrial property, we have the tools and expertise to get the job done right.</p>
+    </section>
+
+    <section id="quote">
+      <h2>Request a Free Quote</h2>
+      <p>Please fill out the form below and we’ll get back to you promptly.</p>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScH4ryXNM1bw4gSUUpOkQZSKAZ_i1sMr798Tc_rwixv_v1lDQ/viewform?embedded=true" width="640" height="1295" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </section>
 
     <section id="contact">
