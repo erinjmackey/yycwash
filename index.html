@@ -105,7 +105,7 @@
     }
 
     .gallery img {
-      width: calc(33% - 1rem);
+      width: calc(50% - 1rem);
       border-radius: 8px;
       object-fit: cover;
     }
@@ -138,13 +138,14 @@
 
   <nav>
     <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
     <a href="#about">About</a>
     <a href="#pricing">Pricing</a>
     <a href="#quote">Get a Quote</a>
   </nav>
 
   <div class="container">
-    <section id="services">
+    <section id="services" class="greensection">
       <h2>Our Services</h2>
       <div class="services">
         <div class="service">
@@ -177,6 +178,12 @@
         </div>
       </div>
     </section>
+	<section class="bluesection">
+		<h2>Gallery</h2>
+		<div class="gallery">
+			<img src="images\beforeafterdriveway.jpg" alt="Driveway Before and After">
+		</div>
+	</section>
 
     <section class="greensection" id="about">
 		<h2>About YYC Wash</h2>
@@ -203,7 +210,7 @@
 	  </table>
 	</section>
 
-    <section id="quote">
+    <section id="quote" class="greensection">
       <h2>Request a Free Quote</h2>
       <p>Please fill out the form below and we’ll get back to you promptly.</p>
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScH4ryXNM1bw4gSUUpOkQZSKAZ_i1sMr798Tc_rwixv_v1lDQ/viewform?embedded=true" width="640" height="1295" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
